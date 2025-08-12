@@ -158,7 +158,7 @@ export default function Weather() {
                     </div>
                   )}
                 </div>
-                <div className="min-[700px]:hidden flex flex-col justify-end items-end gap-y-[13px] text-[#666666] text-[14px]">
+                <div className={`${theme === "light" ? `text-[#666666]` : `text-white`} min-[700px]:hidden flex flex-col justify-end items-end gap-y-[13px] text-[14px]`}>
                   <p>{todayWeather?.weather?.[0]?.main}</p>
                   <p>{`Humidity: ${todayWeather?.main?.humidity}`}&#37;</p>
                   <p>{format(new Date(todayWeather?.currentTime), "dd-MM-yyyy hh:mm a")}</p>
