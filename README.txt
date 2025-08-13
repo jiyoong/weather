@@ -1,6 +1,7 @@
 run weather react 
  - npm install
- - npm run dev
+ - npm run build
+ - npm run start
 
 .env.local have 3 setting to edit
 
